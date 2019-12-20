@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vote</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\ADARSH TIWARI\Desktop\practice\s.css">
+
+	<script type="text/javascript">
+		var voteA=0;
+		var voteB=0;
+		function candinate()
+		{
+			voteA=voteA+1;
+			
+			document.getElementById('b1').innerHTML=voteA;
+			// document.getElementById('b2').innerHTML=voteB;
+		}
+
+		function candinateA()
+		{
+			voteB=voteB+1;
+			
+			
+			 document.getElementById('b2').innerHTML=voteB;
+}
+	</script>
+</head>
+<body>
+  <div>
+  	<header style="text-align: center;"><h1>voting</h1></header>
+  </div>
+
+  <div class="row">
+  <div class="column">
+    <img src="C:\Users\ADARSH TIWARI\Desktop\practice\images\b7.jpg" style="width: 100%">
+    <button class="btn success" id="b1" style="margin-left: 190px; border-radius: 10px;" onclick="candinate()">vote A</button>
+
+  </div>
+  <div class="column">
+    <img src="C:\Users\ADARSH TIWARI\Desktop\practice\images\b7.jpg" style="width: 100%">
+    <button class="btn info" id="b2" style="margin-left: 200px; border-radius: 10px;" onclick="candinateA()">vote B</button>
+  </div>
+ 
+</div>
+</body>
+</html>
